@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="container">
+      <div id="display">
+        <div style="display: flex; justify-content: center;">
+        <p id="mins">00</p>
+        <p>:</p>
+        <p id="secs">00</p>
+        </div>
+      </div>
+      <div style="display: flex;">
+        <div id="timer">
+            <h2 style="text-align: center;">Set Timer</h2>
+            <div style="display: flex; justify-content: center;align-items: center;" >
+            <button id="timer+">+</button>
+            <p id="timerValue">0</p>
+            <button id="timer-">-</button>
+        </div>
+        </div>
+        <div id="break">
+            <h2 style="text-align: center;">Break Time</h2>
+            <div style="display: flex; justify-content: center;align-items: center;" >
+                <button id="break+">+</button>
+                <p id="breakValue">0</p>
+                <button id="break-">-</button>
+            </div> 
+        </div>
+    </div>
+    <button onclick="start()" style="margin-left: 100px;" id="enter">Enter</button>
+    <button onclick="cancel()">Cancel</button>
+    </div>
+</body>
+<script src="main.js"></script>
+</html>
